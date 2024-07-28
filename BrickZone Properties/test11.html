@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Latest Properties</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="script.js">
+ <style>
+    .card:nth-child(n+4) {
+      display: none;
+    }
+ </style>
+</head>
+<body>
+ <section id="properties1" class="container latest-property mt-5">
+    <h1>Latest Properties</h1>
+    <div style="height: 1000px;" id="myRow" class="row mt-4">
+      <!-- Your existing cards here -->
+      <div class="col-md-4">
+        <a style="text-decoration: none;" href="project.html">
+        <div class="card" style="width: 22rem; height: auto;">
+          <img
+            src="assets/img/property-4.jpg"
+            id="property-img"
+            class="card-img-top dim-img"
+            height="100%"
+            alt="..."
+          />
+          <div class="latest-content" >
+            <h2>Kohinoor Properties 1</h2>
+          </div>
+        </div>
+      </a>
+
+      </div>
+      <div class="col-md-4" >
+        <a style="text-decoration: none;" href="project.html">
+        <div class="card" style="width: 22rem">
+          <img
+          src="assets/img/property-2.jpg"
+          class="card-img-top dim-img"
+          id="property-img"
+          alt="..."
+          />
+            <div class="latest-content">
+              <h2>Kalpataru Limited 2</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 22rem">
+          <img
+            src="assets/img/property-2.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>Krisala 3</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="last_card" style="width: 22rem">
+          <img
+            src="assets/img/property-1.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>Kumar Builder 4</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 extra">
+        <div class="card" id="last_card" style="width: 22rem">
+          <img
+            src="assets/img/property-1.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>Godrej Properties 5</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 extra">
+        <div class="card" id="last_card" style="width: 22rem">
+          <img
+            src="assets/img/property-1.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>My Home 6</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 extra">
+        <div class="card" id="last_card" style="width: 22rem">
+          <img
+            src="assets/img/property-1.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>Shapoorji Palonji 7</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 extra">
+        <div class="card" id="last_card" style="width: 22rem">
+          <img
+            src="assets/img/property-1.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>Godrej Properties 8</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 extra">
+        <div class="card" id="last_card" style="width: 22rem">
+          <img
+            src="assets/img/property-1.jpg"
+            class="card-img-top dim-img"
+            id="property-img"
+            alt="..."
+          />
+          <div class="latest-content">
+            <h2>VTP Flamante 9</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="seeMoreBtn" class="btn btn-primary mt-3">See More</button>
+ </section>
+
+ <script>
+    document.getElementById('seeMoreBtn').addEventListener('click', function() {
+      var cards = document.querySelectorAll('.card:nth-child(n+4)');
+      cards.forEach(function(card) {
+        card.style.display = 'block';
+      });
+      // Optionally, hide the "See More" button after showing all cards
+      this.style.display = 'none';
+    });
+ </script>
+</body>
+</html>

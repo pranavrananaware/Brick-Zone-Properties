@@ -1,0 +1,10 @@
+.container{
+  background-color: green;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+}
+
+.box1{
+  background-color: red;
+}
